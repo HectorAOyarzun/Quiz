@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("../assets/quiz.JPG");
+  }
+  
+  h1 {
+    margin-top: 50px;
+    color:white;
+    text-shadow: 1px 1px 10px #131313;
+  }
+  #question{
+    color:white;
+    text-shadow: 1px 1px 10px #131313;
+  }
+  
+  #quiz-container {
+    margin-top: 50px;
+  }
+  
+  #question-container {
+    margin-bottom: 20px;
+  }
+  
+  #options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .option {
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    background-color: #ff6c58;
+    color: white;
+    font-weight: 500;
+    box-shadow: 1px 1px 5px 1px #bdb7b7;
+    border-radius: 30px;
+  }
+  .option:hover{
+    background-color:rgb(206, 31, 142);
+  }
+  .option:focus{
+    background-color:rgb(25, 54, 240);
+  }
+  
+  #submit-btn {
+    padding: 10px 20px;
+    background-color: brown;
+    color:white;
+  }
+  @keyframes anim_title{
+    0% {color: #ff0;} 
+   25% {color: rgb(255, 0, 162);} 
+   50% {color: #085db1;} 
+   75% {color: #f80;} 
+  100% {color: #ff0;} 
+}
+h1 {
+  animation-name: anim_title;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+  @keyframes anim_submit{
+    0% {background-color: rgb(70, 70, 0);} 
+   25% {background-color: rgb(255, 0, 162);} 
+   50% {background-color: #085db1;} 
+   75% {background-color: #f80;} 
+  100% {background-color: rgb(255, 0, 191);} 
+}
+#submit-btn {
+  animation-name: anim_submit;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
